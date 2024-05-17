@@ -1,24 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<center><title>Documento</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario</title>
 </head>
+
 <body>
-    
-    <for action="controlador" method="get">
-    <div><label for="edad">EDAD</label></div>
-    <div><input type="number" step="1" min="0" max="20"  placeholder="ingresar su edad" name="edad" disabled="false"></div>
-    <div><label for=nombre>NOMBRE</label></div>
-    <div><input type="text" name="nombre" placeholder="ingresar su nombre" id="nombre" autofocus autocomplete="off" ></div>
-    <div><label for=color>COLOR</label></div>
-    <div><input type="color" ></div>
-    <div><label for="email">EMAIL</label></div>
-    <div><input type="text" correo="ingresar el correo" placeholder="gmail"></div>
-    <div><label for="telefono">TELEFONO</label></div>
-    <div><input type="text" telefono="ingresar el numero de telefono" placeholder="telefono" rango=[0-9],{0-10}></div>
-    <button type=submit>GUARDAR</button>
+<form action="controlador" method="get">
+<div><label for="number">Ingrese su Edad:</label></div>
+<input type="number" step="1" min="0" max="20" value="5" name="Edad" disabled />
+
+<div><label for="Nombre">Nombre:</label>
+<div>
+
+<div><input type="text" name="Nombre" required placeholder="Ingrese su Nombre" id="Nombre" autofocus
+autocomplete="off">
+<div>
+<div><input type="color">
+<div>
+
+<div><label for="email">Ingrese su email:</label></div>
+<div><input type="email" name="email" required placeholder="Ingrese su Email" id="email" autofocus
+autocomplete="off">
+<div></div>
+<div><label for="Numero">Ingrese su Numero:</label></div>
+<div><input type="text" name="Numero" required placeholder="Ingrese su Numero" id="Numero" autofocus
+autocomplete="off">
+
+<div><label for="ciudad">seleccionar ciudad</label></div>
+<div><select name="ciudad" id="ciudad"><option value="1">BUCARAMANGA</option>
+<option value="2">GIRON</option>
+<option value="3">BOGOTA</option>
+<option value="4">PIEDECUESTA</option>
+<option value="5">SAN GIL</option></select></div>
+
+                    
+<div><input type="radio" name="genero">MASCULINO
+<input type="radio" name="genero">FEMENINO</div>
+
+<div><label for=""><input type="checkbox" name="" checked   value>html </label>
+<label for=""><input type="checkbox" name="">GIT</label>
+<label for=""><input type="checkbox" name="">CLI</label>
+<label for=""><input type="checkbox" name="">JS</label></div>
+
+<div><input accept="image/png" multiple type="file" checked ></div>
+
+<button type="submit" >Guardar</button>
+                    
+<div></div>
+</form>
+
 </body>
-</center>
+
 </html>
